@@ -45,7 +45,7 @@ After training the model, we needed to test its effectiveness. To do this, we ha
 
 At first, I was confused because Ollama wasn't opening. After spending three hours troubleshooting, I reached out to the same friend again, who casually mentioned, _"It won't open as a window; it runs in the background. Check the hidden icons next to the time and date."_ This was another valuable lesson in problem-solving through collaboration.
 
-Once we successfully ran the model, we tested it by feeding buggy Python code. The model **produced correct fixes, but with an unexpected issue—it generated the corrected code in an infinite loop!** This became our next major hurdle.
+Once we successfully ran the model, we tested it by feeding buggy Python code. The model **produced correct fixes, but with an unexpected issue—it generated the corrected code again and again until EOS(End Of Sequence) length is satisfied!** This became our next major hurdle.
 
 ---
 ## **Deploying as a VS Code Extension**
@@ -54,7 +54,7 @@ With the model trained and functional (aside from the infinite loop issue), I de
 - **How to Build a VS Code Extension** ([watch here](https://youtu.be/clJCDHml2cA?si=E1wQMgJXC5hUs0Hf))
 - **How to Publish a VS Code Extension** ([watch here](https://youtu.be/pj3uetwbo00?si=CUn0zaERzWear4Bl))
 
-Following these guides, I successfully launched the **Krishna Python Bug Detection & Fixing** extension on the VS Code Marketplace. However, the **infinite loop issue** remains unresolved, and I am actively looking for solutions.
+Following these guides, I successfully launched the **Krishna Python Bug Detection & Fixing** extension on the VS Code Marketplace. However, the **generated the corrected code again and again until EOS(End Of Sequence) length is satisfied!** remains unresolved, and I am actively looking for solutions.
 
 ---
 ## **Lessons Learned & Future Improvements**
