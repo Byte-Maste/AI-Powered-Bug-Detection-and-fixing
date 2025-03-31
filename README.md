@@ -1,4 +1,4 @@
-# Fine-Tuning in Large Language Models For Bug Detection and Fixing
+# Fine-Tuning in Large Language Models For Bug Detection and Fixing For Python Code
 
 ## Overview
 This repository hosts theproject dedicated to Fine-Tuning in Large Language Models For Bug Detection and Fixing in Python. The project utilizes a custom dataset and innovative methods to enhance the LLM's capabilities in understanding and correcting code errors. Here are the topics in this project:
