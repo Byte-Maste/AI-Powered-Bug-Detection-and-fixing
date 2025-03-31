@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Fine-Tuning in Large Language Models For Bug Detection and Fixing
 
 ## Overview
@@ -81,4 +82,5 @@ Currently, the extension may enter an **infinite response loop** when processing
 ## Conclusion
 Fine-tuning the CodeLlama model enhances its ability to understand, generate, and debug Python code more accurately. By training it on domain-specific datasets, we improve its efficiency in identifying errors and providing precise fixes, making it a powerful tool for automated code analysis.
 
-## User Interface
+##User Interface
+

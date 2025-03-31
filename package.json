@@ -1,0 +1,58 @@
+{
+  "name": "krishna-bug-detection-fixing-ext",
+  "displayName": "Krishna Python Bug Detection & Fixing",
+  "description": "Boost your Python development with an intelligent bug detection and debugging assistant! This VS Code extension leverages a fine-tuned AI model specifically trained on Python code, helping you identify and fix errors effortlessly.",
+  "version": "0.0.1",
+  "publisher": "krishnachoudhary005",
+  "icon": "assets/icon.png",
+  "galleryBanner.color": {
+    "color": "#21214c",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/Byte-Maste/krishna-bug-detection-fixing-ext.git"
+},
+  "categories": [
+    "Other",
+    "Programming Languages",
+    "Debuggers"
+  ],
+  "activationEvents": [
+    "onCommand:krishna-bug-detection-fixing-ext.helloWorld"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "krishna-bug-detection-fixing-ext.helloWorld",
+        "title": "AI-Powered Python Debugger"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.98.0",
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
+    "@typescript-eslint/parser": "^8.25.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.21.0",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "ollama": "^0.5.14"
+  }
+}
