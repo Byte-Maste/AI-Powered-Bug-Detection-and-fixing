@@ -6,6 +6,7 @@ This repository hosts theproject dedicated to Fine-Tuning in Large Language Mode
 - [Dataset Creation Process](#dataset-creation-process)
 - [Model Description](#model-description)
 - [Fine-Tuning](#fine-tuning)
+- [Krishna Python Bug Detection & Fixing – VS Code Extension](#VSCode-extension)
 - [Conclusion](#conclusion)
 - [User Interface](#user-interface)
 - [How to Use](#how-to-use)
@@ -39,7 +40,46 @@ In this project, fine-tuning is aimed at adapting the model to the coding domain
 
 <p align="center">
     <img src="Images/LoRA.jpg" width=400>
-    <img src="Images/LoRA_training.jpg" width=600>
+    <img src="Images/LoRA_training.jpg" width=500>
 </p>
 
+## Krishna Python Bug Detection & Fixing – VS Code Extension
+
+## Overview
+Boost your Python development with an intelligent bug detection and debugging assistant! **Krishna Python Bug Detection & Fixing** is a powerful VS Code extension designed to identify and resolve errors in Python code effortlessly. Leveraging a fine-tuned AI model specifically trained on Python debugging, this extension streamlines your development workflow, making error resolution faster and more intuitive.
+
+## Features
+- ✅ **Automatic Bug Detection** – Instantly detects syntax and logical errors in Python code.
+- ✅ **AI-Powered Debugging** – Provides smart suggestions to fix common issues.
+- ✅ **Seamless Integration** – Works directly within VS Code for a smooth coding experience.
+- ✅ **Code Optimization** – Suggests improvements for cleaner and more efficient code.
+- ✅ **User-Friendly Interface** – Highlights errors and fixes in real-time.
+
+## Installation
+1. Open **VS Code**.
+2. Go to **Extensions** (`Ctrl + Shift + X`).
+3. Search for **"Krishna Python Bug Detection & Fixing"**.
+4. Click **Install**.
+5. Restart VS Code if needed.
+
+## Usage
+1. Open a Python file in VS Code.
+2. The extension will automatically analyze the code.
+3. Errors and suggestions will be displayed in the **Problems** tab.
+4. Apply the suggested fixes or refine the code based on AI recommendations.
+
+## Known Issue: Infinite Loop on Buggy Code
+Currently, the extension may enter an **infinite response loop** when processing certain buggy code. This issue is under investigation, and we are working on a fix. In the meantime, if you encounter this issue:
+- Try stopping the execution manually (`Ctrl + C` or restarting VS Code).
+- Modify the input to be more structured before running the extension.
+
+## Upcoming Improvements
+- 🔹 Fix for the infinite loop issue(Introduce a Timeout Mechanism,Implement a Debugging Confidence Score).
+- 🔹 Enhanced AI model with better debugging capabilities.
+- 🔹 More detailed explanations for code fixes.
+
+## Conclusion
+Fine-tuning the CodeLlama model enhances its ability to understand, generate, and debug Python code more accurately. By training it on domain-specific datasets, we improve its efficiency in identifying errors and providing precise fixes, making it a powerful tool for automated code analysis.
+
+##User Interface
 
