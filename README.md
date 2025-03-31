@@ -86,8 +86,8 @@ Fine-tuning the CodeLlama model enhances its ability to understand, generate, an
 This user interface is designed for the "Krishna AI-powered Python Debugger" tool. It features a clean, minimalist layout with a multi-line text area where users can input their Python code or describe coding issues. Users interact with the extension via the prominent "ASK" button to submit queries, and the "Reset Conversation" button to start fresh debugging sessions. The response area displays AI-generated solutions with syntax highlighting for code snippets, while a convenient copy button allows users to easily transfer fixes to their codebase. The UI is optimized for VSCode integration, providing developers with contextual debugging assistance without disrupting their workflow.
 
 <p align="center">
-    <img src="Images/LoRA.jpg" width=400>
-    <img src="Images/LoRA_training.jpg" width=500>
+    <img src="Images/UI.png" width=400>
+    <img src="Images/vs-img1.png" width=500>
 </p>
 
 ## How to Use
