@@ -26,3 +26,14 @@ This dataset was generated using Mutation Testing techniques to systematically i
     <img src="Images/Dataset_schema.jpg" width=600>
     <img src="Images/mutation_distributaions.jpg" width=400>
 </p>
+
+## Dataset Creation Process
+The dataset was curated through a semi-automated process:
+1. **Code Extraction**: Clean code snippets were extracted from open-source repositories.
+2. **Mutation Injection**: Bugs were introduced into the clean code using predefined mutation rules to alter specific parts of the code logically.
+3. **Data Compilation**: Each entry in the dataset includes the bugged code, the fix, the location of the fix, and the type of mutation, prepared for LLM training and evaluation.
+
+## Model Description
+
+
+
