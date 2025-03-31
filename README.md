@@ -82,3 +82,13 @@ Currently, the extension may enter an **infinite response loop** when processing
 Fine-tuning the CodeLlama model enhances its ability to understand, generate, and debug Python code more accurately. By training it on domain-specific datasets, we improve its efficiency in identifying errors and providing precise fixes, making it a powerful tool for automated code analysis.
 
 ## User Interface
+
+This user interface is designed for the "Krishna AI-powered Python Debugger" tool. It features a clean, minimalist layout with a multi-line text area where users can input their Python code or describe coding issues. Users interact with the extension via the prominent "ASK" button to submit queries, and the "Reset Conversation" button to start fresh debugging sessions. The response area displays AI-generated solutions with syntax highlighting for code snippets, while a convenient copy button allows users to easily transfer fixes to their codebase. The UI is optimized for VSCode integration, providing developers with contextual debugging assistance without disrupting their workflow.
+
+<p align="center">
+    <img src="Images/LoRA.jpg" width=400>
+    <img src="Images/LoRA_training.jpg" width=500>
+</p>
+
+## How to Use
+To use the Krishna AI-powered Python Debugger extension, simply open the extension panel in VSCode, paste your problematic Python code or describe your issue in the text area, and click the "ASK" button to receive AI-generated debugging suggestions and fixes. Copy the solution directly to your clipboard with the copy button, or reset the conversation to start a new debugging session when needed.
