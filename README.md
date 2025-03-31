@@ -2,6 +2,7 @@
 
 ## Overview
 This repository hosts theproject dedicated to Fine-Tuning in Large Language Models For Bug Detection and Fixing in Python. The project utilizes a custom dataset and innovative methods to enhance the LLM's capabilities in understanding and correcting code errors. Here are the topics in this project:
+- [From Idea to Reality: Developing Krishna Python Bug Detection & Fixing](#from-idea-to-reality)
 - [Dataset Description](#dataset-description)
 - [Dataset Creation Process](#dataset-creation-process)
 - [Model Description](#model-description)
@@ -10,6 +11,70 @@ This repository hosts theproject dedicated to Fine-Tuning in Large Language Mode
 - [Conclusion](#conclusion)
 - [User Interface](#user-interface)
 - [How to Use](#how-to-use)
+
+## From Idea to Reality: Developing Krishna Python Bug Detection & Fixing
+
+## **The Beginning: A Challenge Unfolds**
+
+It all started when I received a problem statement: **develop an AI-powered tool for Python bug detection and fixing.** At first, I had no idea how to train an AI model, let alone deploy it as a functional tool. With a mix of excitement and uncertainty, I reached out to my college's incubation cell for guidance.
+
+One of my friends from the incubation cell suggested a beginner-friendly YouTube video ([watch here](https://youtu.be/Gpyukc6c0w8?si=lmsDgF_E94mOyy28)) that introduced me to the basics of training models. At the same time, my mentor advised me to explore **Hugging Face**, a platform for machine learning models, and suggested looking at codebases of similar projects. This set the foundation for my journey into AI model training.
+
+---
+## **Navigating the Unknown: First Steps in AI Training**
+
+After watching the video and studying existing codebases, I reached the next challenge—**where and how to train the model.** I consulted my friend again, who introduced me to **Google Colab**, a cloud-based platform for training AI models. This was a turning point, but my struggle was far from over.
+
+While training the model, I encountered multiple errors. I spent two frustrating days troubleshooting without success. Then, I stumbled upon **Claude AI**, which miraculously solved my issue in just **five minutes**. This experience taught me the importance of using AI tools to accelerate debugging and problem-solving.
+
+During this time, I also learned about the **LoRA (Low-Rank Adaptation) technique**, which allows for efficient fine-tuning of large language models. My mentor introduced me to **Unsloth**, a framework that speeds up model training, and I also discovered **quantization**, a technique that reduces model size without significant loss of performance.
+
+Additionally, during the **first live session with our industry mentor, Tarun Sir**, we learned how to create datasets from open-source repositories. This led my teammate and me to start collecting **Python code** from open-source repositories, while sometimes using GPT-generated code.
+
+---
+## **Dataset Preparation: Introducing Mutations**
+
+With a clear goal to train the model for **Python bug detection and fixing**, we meticulously curated our dataset. Since the model needed to differentiate between correct and incorrect code, we **introduced artificial bugs** into the original code using **mutation techniques**. This step was crucial in ensuring the model learned to detect and rectify common coding errors.
+
+However, an unexpected challenge arose: **which model should we train?** During our **second live session with the industry mentor**, we were advised to choose any model that suited our needs. Initially, we attempted to fine-tune **DeepSeek-Coder-V2-Lite-Instruct**, but it wasn't supported by Unsloth. Since we had already experimented with **Llama models** in our earlier learning phase, we naturally pivoted to **CodeLlama** for our final training.
+
+---
+## **Bringing the Model to Life: Training & Testing**
+
+After training the model, we needed to test its effectiveness. To do this, we had to convert the model into **GGUF format** to make it compatible with local execution. A friend from the incubation cell suggested using **Ollama** to run the model locally.
+
+At first, I was confused because Ollama wasn't opening. After spending three hours troubleshooting, I reached out to the same friend again, who casually mentioned, _"It won't open as a window; it runs in the background. Check the hidden icons next to the time and date."_ This was another valuable lesson in problem-solving through collaboration.
+
+Once we successfully ran the model, we tested it by feeding buggy Python code. The model **produced correct fixes, but with an unexpected issue—it generated the corrected code in an infinite loop!** This became our next major hurdle.
+
+---
+## **Deploying as a VS Code Extension**
+
+With the model trained and functional (aside from the infinite loop issue), I decided to package it as a **VS Code extension**. To achieve this, I relied on two YouTube tutorials:
+- **How to Build a VS Code Extension** ([watch here](https://youtu.be/clJCDHml2cA?si=E1wQMgJXC5hUs0Hf))
+- **How to Publish a VS Code Extension** ([watch here](https://youtu.be/pj3uetwbo00?si=CUn0zaERzWear4Bl))
+
+Following these guides, I successfully launched the **Krishna Python Bug Detection & Fixing** extension on the VS Code Marketplace. However, the **infinite loop issue** remains unresolved, and I am actively looking for solutions.
+
+---
+## **Lessons Learned & Future Improvements**
+
+Through this project, I realized that **reaching out to people and leveraging community knowledge is key to overcoming technical hurdles**. Every major breakthrough—be it discovering **Hugging Face, Google Colab, Unsloth, LoRA, or Ollama**—came from mentorship and collaboration.
+
+As for the **next steps**, my top priority is fixing the **infinite response loop** issue. Though I don’t have a solution yet, I plan to reach out to experts and continue refining the model.
+
+---
+## **Final Thoughts: Join the Journey!**
+
+The **Krishna Python Bug Detection & Fixing** extension is now live! 🚀 You can search for it on **VS Code Marketplace**, install it, and give it a try. If anyone has experience with handling infinite response loops in AI models, feel free to reach out to me:
+
+📧 **Email:** krishnachoudhary4616@gmail.com  
+🔗 **LinkedIn:** [Krishna Choudhary](https://www.linkedin.com/in/choudharykrishna40/)
+
+This is just the beginning. The journey of improving this extension continues, and I look forward to learning and growing with the developer community! 💡✨
+
+
+
 
 ## Dataset Description
 The dataset, named `krish-bug-detect-fix`, is meticulously crafted to train and test LLMs specifically for bug detection and correction tasks. It comprises 25,793 rows, each containing:
